@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/poptite"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/poptite"
+                android:text="More Information :"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+android:background="@color/cardview_dark_background"                />
+            <Button
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:id="@+id/dismisspoptop"
+                android:background="@android:drawable/ic_menu_close_clear_cancel"
+                android:backgroundTint="@color/colorPrimary"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/poptite"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/poplist"
+                android:layout_below="@id/poptite"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Hello"
+                />
+            <WebView
+                android:id="@+id/htmlwebview"
+                android:layout_below="@id/poplist"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:ignore="WebViewLayout" />
+            <Button
+                android:id="@+id/dismisspop"
+                android:text="CLOSE"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/cardview_dark_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/htmlwebview"
+
+                />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
